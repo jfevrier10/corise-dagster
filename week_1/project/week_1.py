@@ -49,7 +49,6 @@ def get_s3_data(context):
             output.append(stock)
     return output
 
-
 @op(
     out={"aggregation": Out(dagster_type=Aggregation)},
     description="Given a list of stocks return the Aggregation with the greatest value",
