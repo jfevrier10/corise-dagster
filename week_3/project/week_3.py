@@ -95,7 +95,7 @@ def docker_config(partition_key: str):
                     "bucket": "dagster",
                     "access_key": "test",
                     "secret_key": "test",
-                    "endpoint_url": "http://host.docker.internal:4566",
+                    "endpoint_url": "http://localstack:4566",
                 }
             },
             "redis": {
@@ -151,7 +151,7 @@ def docker_week_3_sensor(context):
                             "bucket": "dagster",
                             "access_key": "test",
                             "secret_key": "test",
-                            "endpoint_url": "http://host.docker.internal:4566",
+                            "endpoint_url": "http://localstack:4566",
                         }
                     },
                     "redis": {
